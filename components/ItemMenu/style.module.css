@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    border-radius: 8px 8px 8px 8px;
+    width: 178px;
+    height: 178px;
+    background-color: red; 
+
+}
+
+.headerBackground{
+    background-color: #FFF9F2; 
+
+}
+
+.itemCategory{
+    display: flex;
+
+}
+
+.itemTitle{
+    
+}
+
+.price{
+
+}

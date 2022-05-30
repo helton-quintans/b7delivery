@@ -1,4 +1,5 @@
 import { Banner } from "../../components/Banner";
+import { ItemMenu } from "../../components/ItemMenu";
 import { SearchInput } from "../../components/SearchInput";
 import styles from "../../styles/Home.module.css";
 
@@ -32,6 +33,7 @@ const Home = () => {
         </header>
 
         <Banner />
+        <ItemMenu />
       </div>
       {/* <div className={styles.swiperContainer}>
         <SwiperHome />
