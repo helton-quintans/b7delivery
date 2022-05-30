@@ -1,6 +1,5 @@
 import { Banner } from "../../components/Banner";
 import { SearchInput } from "../../components/SearchInput";
-import { SwiperHome } from "../../components/Swiper";
 import styles from "../../styles/Home.module.css";
 
 const Home = () => {
