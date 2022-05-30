@@ -1,3 +1,4 @@
+import { Banner } from "../../components/Banner";
 import { SearchInput } from "../../components/SearchInput";
 import { SwiperHome } from "../../components/Swiper";
 import styles from "../../styles/Home.module.css";
@@ -30,9 +31,12 @@ const Home = () => {
             <SearchInput mainColor="#fb9400" onSearch={handleSearch} />
           </div>
         </header>
+
+        <Banner />
       </div>
-      <div className={styles.swiperContainer}></div>
-      <SwiperHome />
+      {/* <div className={styles.swiperContainer}>
+        <SwiperHome />
+      </div> */}
     </>
   );
 };
