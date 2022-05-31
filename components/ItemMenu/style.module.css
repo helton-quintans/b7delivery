@@ -1,26 +1,41 @@
 .container {
-    display: flex;
-    border-radius: 8px 8px 8px 8px;
+    background-color: #fff; 
     width: 178px;
     height: 178px;
-    background-color: red; 
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.19);
 
 }
 
 .headerBackground{
-    background-color: #FFF9F2; 
-
+    background-color: #f6f0ea; 
+    width: 100%;
+    height: 89px;
+    border-radius: 8px 8px 0 0;
+    padding-bottom: 89px;
+}
+.headerBackground img{
+    margin-left: 30px;
 }
 
 .itemCategory{
-    display: flex;
-
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 500;
+    padding: 22px 13px 0px 13px;
 }
 
 .itemTitle{
-    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 13px;
 }
 
 .price{
-
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fb9400;
+    margin-left: 13px;
 }
