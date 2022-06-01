@@ -3,10 +3,10 @@ import styles from "./style.module.css";
 type ItemMenuProps = {
   category: string;
   title: string;
-  price: number;
+  price: string;
 };
 
-export const ItemMenu = (props) => {
+export const ItemMenu = (props: ItemMenuProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.headerBackground}>

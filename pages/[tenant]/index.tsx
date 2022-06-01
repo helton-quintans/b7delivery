@@ -35,12 +35,36 @@ const Home = () => {
         <Banner />
 
         <section className={styles.menuBody}>
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
-          <ItemMenu category="Tradicional" title="Texas burguer" price={25} />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
+          <ItemMenu
+            category="Tradicional"
+            title="Texas burguer"
+            price="25,00"
+          />
         </section>
       </div>
       {/* <div className={styles.swiperContainer}>
