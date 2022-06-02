@@ -6,7 +6,7 @@ type ItemMenuProps = {
   price: string;
 };
 
-export const ItemMenu = (props: ItemMenuProps) => {
+export const ProductItem = (props: ItemMenuProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.headerBackground}>

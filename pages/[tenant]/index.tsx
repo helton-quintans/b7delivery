@@ -1,5 +1,5 @@
 import { Banner } from "../../components/Banner";
-import { ItemMenu } from "../../components/ItemMenu";
+import { ProductItem } from "../../components/ProductItem";
 import { SearchInput } from "../../components/SearchInput";
 import styles from "../../styles/Home.module.css";
 
@@ -35,32 +35,32 @@ const Home = () => {
         <Banner />
 
         <section className={styles.menuBody}>
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
           />
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
           />
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
           />
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
           />
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
           />
-          <ItemMenu
+          <ProductItem
             category="Tradicional"
             title="Texas burguer"
             price="25,00"
