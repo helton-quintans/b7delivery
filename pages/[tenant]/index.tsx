@@ -1,6 +1,7 @@
 import { Banner } from "../../components/Banner";
 import { ProductItem } from "../../components/ProductItem";
 import { SearchInput } from "../../components/SearchInput";
+
 import styles from "../../styles/Home.module.css";
 
 const Home = () => {
@@ -34,42 +35,64 @@ const Home = () => {
 
         <Banner />
 
-        <section className={styles.menuBody}>
+        <div className={styles.grid}>
           <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
+            product={{
+              id: 1,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
           />
           <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
+            product={{
+              id: 2,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
           />
           <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
+            product={{
+              id: 3,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
           />
           <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
+            product={{
+              id: 4,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
           />
           <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
+            product={{
+              id: 5,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
           />
-          <ProductItem
-            category="Tradicional"
-            title="Texas burguer"
-            price="25,00"
-          />
-        </section>
+        </div>
       </div>
-      {/* <div className={styles.swiperContainer}>
-        <SwiperHome />
-      </div> */}
     </>
   );
 };
