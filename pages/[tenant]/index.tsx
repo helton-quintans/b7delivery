@@ -16,7 +16,7 @@ const Home = () => {
             <div className={styles.headerTopLeft}>
               <div className={styles.headerTitle}>Seja Bem Vindo(a)👋</div>
               <div className={styles.headerSubtitle}>
-                O que deseja para hoje
+                O que deseja para hoje?
               </div>
             </div>
             <div className={styles.headerTopRigth}>
@@ -80,6 +80,18 @@ const Home = () => {
             mainColor="#FB9400"
             secondColor="#FFF9F2"
           />
+          <ProductItem
+            product={{
+              id: 5,
+              image: "/temp/TexasBurger1.png",
+              category: "Tradicional",
+              name: "Texas Burger",
+              price: "R$ 25,50",
+            }}
+            mainColor="#FB9400"
+            secondColor="#FFF9F2"
+          />
+
           <ProductItem
             product={{
               id: 5,

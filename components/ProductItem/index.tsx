@@ -31,14 +31,5 @@ export const ProductItem = ({
         </div>
       </a>
     </Link>
-
-    // <div className={styles.container}>
-    //   <div className={styles.headerBackground}>
-    //     <img src="/temp/GoldenBurger1.png" alt="Item 01" />
-    //   </div>
-    //   <div className={styles.itemCategory}>{props.category}</div>
-    //   <div className={styles.itemTitle}>{props.title}</div>
-    //   <div className={styles.price}>R$ {props.price}</div>
-    // </div>
   );
 };
