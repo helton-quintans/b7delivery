@@ -1,4 +1,48 @@
 .container {
+    display: block;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .head {
+    height: 90px;
+  }
+  
+  .info {
+    padding: 13px;
+  }
+  
+  .img {
+    text-align: center;
+    margin-top: -90px;
+  }
+  
+  .img img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .catName {
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--gray-900);
+  }
+  
+  .name {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--gray-900);
+  }
+  
+  .price {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+/* .container {
     background-color: #fff; 
     width: 178px;
     height: 178px;
@@ -38,4 +82,4 @@
     line-height: 18px;
     color: #fb9400;
     margin-left: 13px;
-}
+} */
