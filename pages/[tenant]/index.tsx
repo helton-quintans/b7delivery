@@ -91,7 +91,6 @@ const Home = () => {
             mainColor="#FB9400"
             secondColor="#FFF9F2"
           />
-
           <ProductItem
             product={{
               id: 5,
