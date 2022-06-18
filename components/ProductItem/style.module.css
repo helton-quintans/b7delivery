@@ -1,85 +1,43 @@
 .container {
-    display: block;
-    border-radius: 8px;
-    background: var(--white);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-  .head {
-    height: 90px;
-  }
-  
-  .info {
-    padding: 13px;
-  }
-  
-  .img {
-    text-align: center;
-    margin-top: -90px;
-  }
-  
-  .img img {
-    width: 80%;
-    height: auto;
-  }
-  
-  .catName {
-    font-weight: 500;
-    font-size: 10px;
-    color: var(--gray-900);
-  }
-  
-  .name {
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--gray-900);
-  }
-  
-  .price {
-    font-weight: 600;
-    font-size: 15px;
-  }
-
-/* .container {
-    background-color: #fff; 
-    width: 178px;
-    height: 178px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.19);
-
+  display: block;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  /* overflow: hidden; */
+  text-decoration: none;
 }
 
-.headerBackground{
-    background-color: #f6f0ea; 
-    width: 100%;
-    height: 89px;
-    border-radius: 8px 8px 0 0;
-    padding-bottom: 89px;
-}
-.headerBackground img{
-    margin-left: 30px;
+.head {
+  height: 90px;
 }
 
-.itemCategory{
-    font-size: 8px;
-    line-height: 10px;
-    font-weight: 500;
-    padding: 22px 13px 0px 13px;
+.info {
+  padding: 13px;
 }
 
-.itemTitle{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 13px;
+.info img {
+  text-align: center;
+  margin-top: -90px;
 }
 
-.price{
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    color: #fb9400;
-    margin-left: 13px;
-} */
+.info .img img {
+  width: 100%;
+  height: auto;
+}
+
+.info .catName {
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--gray-900);
+}
+
+.info .name {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--gray-900);
+}
+
+.info .price {
+  font-weight: 600;
+  font-size: 15px;
+}
