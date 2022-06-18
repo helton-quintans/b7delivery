@@ -22,7 +22,6 @@ export const ProductItem = ({
           <div className={styles.img}>
             <img src={product.image} alt="Burger" />
           </div>
-
           <div className={styles.catName}>{product.category}</div>
           <div className={styles.name}>{product.name}</div>
           <div className={styles.price} style={{ color: mainColor }}>
