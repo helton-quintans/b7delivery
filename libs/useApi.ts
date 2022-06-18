@@ -19,8 +19,8 @@ export const useApi = () => ({
       case "pizza":
         return {
           name: "pizza",
-          mainColor: "#0000ff",
-          secondColor: "#00ff00",
+          mainColor: "#000",
+          secondColor: "#0000ff",
         };
         break;
       default:

@@ -1,12 +1,12 @@
-import { GetServerSideProps } from "next/types";
+import { GetServerSideProps } from "next";
 import { Banner } from "../../components/Banner";
 import { ProductItem } from "../../components/ProductItem";
 import { SearchInput } from "../../components/SearchInput";
-import { useApi } from "../../libs/useApi";
+import { getTenantResponse, useApi } from "../../libs/useApi";
 
 import styles from "../../styles/Home.module.css";
 
-const Home = () => {
+const Home = (data: Props) => {
   const handleSearch = (searchValue: string) => {
     console.log(`Você está buscando por ${searchValue}`);
   };
@@ -23,15 +23,27 @@ const Home = () => {
             </div>
             <div className={styles.headerTopRigth}>
               <div className={styles.menuButton}>
-                <div className={styles.menuButtonLine}></div>
-                <div className={styles.menuButtonLine}></div>
-                <div className={styles.menuButtonLine}></div>
+                <div
+                  className={styles.menuButtonLine}
+                  style={{ backgroundColor: data.tenant.mainColor }}
+                ></div>
+                <div
+                  className={styles.menuButtonLine}
+                  style={{ backgroundColor: data.tenant.mainColor }}
+                ></div>
+                <div
+                  className={styles.menuButtonLine}
+                  style={{ backgroundColor: data.tenant.mainColor }}
+                ></div>
               </div>
             </div>
           </div>
 
           <div className={styles.headerBottom}>
-            <SearchInput mainColor="#fb9400" onSearch={handleSearch} />
+            <SearchInput
+              mainColor={data.tenant.mainColor}
+              onSearch={handleSearch}
+            />
           </div>
         </header>
 
@@ -46,8 +58,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
           <ProductItem
             product={{
@@ -57,8 +69,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
           <ProductItem
             product={{
@@ -68,8 +80,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
           <ProductItem
             product={{
@@ -79,8 +91,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
           <ProductItem
             product={{
@@ -90,8 +102,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
           <ProductItem
             product={{
@@ -101,8 +113,8 @@ const Home = () => {
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor="#FB9400"
-            secondColor="#FFF9F2"
+            mainColor={data.tenant.mainColor}
+            secondColor={data.tenant.secondColor}
           />
         </div>
       </div>
@@ -111,6 +123,10 @@ const Home = () => {
 };
 
 export default Home;
+
+type Props = {
+  tenant: getTenantResponse;
+};
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { tenant: tenantSlug } = context.query;
