@@ -130,6 +130,7 @@ type Props = {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { tenant: tenantSlug } = context.query;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const api = useApi();
 
   //Get Tenant
