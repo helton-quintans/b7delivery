@@ -49,10 +49,7 @@ const Home = (data: Props) => {
           </div>
 
           <div className={styles.headerBottom}>
-            <SearchInput
-              mainColor={data.tenant.mainColor}
-              onSearch={handleSearch}
-            />
+            <SearchInput onSearch={handleSearch}/>
           </div>
         </header>
 
