@@ -11,11 +11,11 @@ const defaultValues: appContextType = {
     setTenant: () => null
 };
 
-//criando contexto
+// context
 const appContext = createContext<appContextType>(defaultValues);
-//criando hook
+// hook
 export const useAppContext = () => useContext(appContext)
-//criando provider
+// provider
 type Props ={
     children: ReactNode
 }
