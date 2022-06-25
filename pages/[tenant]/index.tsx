@@ -57,71 +57,60 @@ const Home = (data: Props) => {
 
         <div className={styles.grid}>
           <ProductItem
-            product={{
+            data={{
               id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
           <ProductItem
-            product={{
-              id: 2,
+            data={{
+              id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
           <ProductItem
-            product={{
-              id: 3,
+            data={{
+              id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
           <ProductItem
-            product={{
-              id: 4,
+            data={{
+              id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
           <ProductItem
-            product={{
-              id: 5,
+            data={{
+              id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
           <ProductItem
-            product={{
-              id: 5,
+            data={{
+              id: 1,
               image: "/temp/TexasBurger1.png",
               category: "Tradicional",
               name: "Texas Burger",
               price: "R$ 25,50",
             }}
-            mainColor={data.tenant.mainColor}
-            secondColor={data.tenant.secondColor}
           />
+          
         </div>
       </div>
     </>
